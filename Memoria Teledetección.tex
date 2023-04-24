@@ -1,0 +1,191 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+
+\renewcommand\lstlistingname{Código}
+\renewcommand\lstlistlistingname{Códigos}
+
+\lstset{
+    basicstyle=\ttfamily\scriptsize,
+    columns=fullflexible,
+    keepspaces=true,
+    showstringspaces=false,
+    commentstyle=\color[gray]{0.4},
+    stringstyle=\color[rgb]{0, 0, 0.5},
+    frame=single,
+    breakatwhitespace=true,
+    breaklines=true,
+    tabsize=4
+}
+
+\title{
+    Memoria de Laboratorio \\
+    \large Teledetección
+}
+\author{Alejandro Domínguez Muñoz}
+\institute{Universidad de Sevilla}
+\date{Mayo de 2023}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Imágenes}
+
+
+
+\section{Código}
+
+\begin{frame}{LAB1: Introducción}
+\only<1>{
+\lstinputlisting[language=Matlab, caption=facto1.m]{lib/facto1.m}
+}
+\only<2>{
+\lstinputlisting[language=Matlab, caption=facto2.m]{lib/facto2.m}
+}
+\only<3>{
+\lstinputlisting[language=Matlab, caption=sol1.m]{src/sol1.m}
+}
+\end{frame}
+
+\begin{frame}{LAB2: Histograma}
+\only<1>{
+\lstinputlisting[language=Matlab, caption=histo.m]{lib/histo.m}
+}
+\only<2>{
+\lstinputlisting[language=Matlab, caption=loadLibs.m]{src/loadLibs.m}
+\lstinputlisting[language=Matlab, caption=unloadLibs.m]{src/unloadLibs.m}
+}
+\only<3>{
+\lstinputlisting[language=Matlab, caption=sol2\_1.m]{src/sol2_1.m}
+}
+\only<4>{
+\lstinputlisting[language=Matlab, caption=expan.m]{lib/expan.m}
+}
+\only<5>{
+\lstinputlisting[language=Matlab, caption=sol2\_2.m]{src/sol2_2.m}
+}
+\only<6>{
+\lstinputlisting[language=Matlab, caption=corte.m]{lib/corte.m}
+}
+\only<7>{
+\lstinputlisting[language=Matlab, caption=sol2\_3.m]{src/sol2_3.m}
+}
+\only<8>{
+\lstinputlisting[language=Matlab, caption=ecual.m]{lib/ecual.m}
+}
+\only<9>{
+\lstinputlisting[language=Matlab, caption=sol2\_4.m]{src/sol2_4.m}
+}
+\end{frame}
+
+\begin{frame}{LAB3: Filtrado}
+\only<1>{
+\lstinputlisting[language=Matlab, caption=filtro.m]{lib/filtro.m}
+}
+\only<2>{
+\lstinputlisting[language=Matlab, caption=sol3\_1.m]{src/sol3_1.m}
+}
+\only<3>{
+\lstinputlisting[language=Matlab, caption=filtro2.m]{lib/filtro2.m}
+}
+\only<4>{
+\lstinputlisting[language=Matlab, caption=sol3\_2.m]{src/sol3_2.m}
+}
+\only<5>{
+\lstinputlisting[language=Matlab, caption=filtro2.m]{lib/filtro2.m}
+}
+\only<6>{
+\lstinputlisting[language=Matlab, caption=sol3\_2.m]{src/sol3_2.m}
+}
+\only<7>{
+\lstinputlisting[language=Matlab, caption=filtroMediana.m]{lib/filtroMediana.m}
+}
+\only<8>{
+\lstinputlisting[language=Matlab, caption=sol3\_3.m]{src/sol3_3.m}
+}
+\only<9>{
+\lstinputlisting[language=Matlab, caption=filtroMedianaBorde.m]{lib/filtroMedianaBorde.m}
+}
+\only<10>{
+\lstinputlisting[language=Matlab, caption=sol3\_4.m]{src/sol3_4.m}
+}
+\only<11>{
+\lstinputlisting[language=Matlab, caption=filtroSobel.m]{lib/filtroSobel.m}
+}
+\only<12>{
+\lstinputlisting[language=Matlab, caption=sol3\_5.m]{src/sol3_5.m}
+}
+\end{frame}
+
+\begin{frame}{LAB4: Escalado}
+\only<1>{
+\lstinputlisting[language=Matlab, caption=diezmado.m]{lib/diezmado.m}
+}
+\only<2>{
+\lstinputlisting[language=Matlab, caption=sol4\_1.m]{src/sol4_1.m}
+}
+\only<3>{
+\lstinputlisting[language=Matlab, caption=amplia.m]{lib/amplia.m}
+}
+\only<4>{
+\lstinputlisting[language=Matlab, caption=sol4\_2.m]{src/sol4_2.m}
+}
+\only<5>{
+\lstinputlisting[language=Matlab, caption=mostrarFFT.m]{lib/mostrarFFT.m}
+}
+\only<6>{
+\lstinputlisting[language=Matlab, caption=sol4\_3.m]{src/sol4_3.m}
+}
+\only<7>{
+\lstinputlisting[language=Matlab, caption=ampliafft.m]{lib/ampliafft.m}
+}
+\only<8>{
+\lstinputlisting[language=Matlab, caption=sol4\_4.m]{src/sol4_4.m}
+}
+\end{frame}
+
+\begin{frame}{LAB5: Color}
+\only<1>{
+\lstinputlisting[language=Matlab, caption=falso.m]{lib/falso.m}
+}
+\only<2>{
+\lstinputlisting[language=Matlab, caption=sol5\_1.m]{src/sol5_1.m}
+}
+\only<3>{
+\lstinputlisting[language=Matlab, caption=cortehsv.m]{lib/cortehsv.m}
+}
+\only<4>{
+\lstinputlisting[language=Matlab, caption=sol5\_2.m]{src/sol5_2.m}
+}
+\only<5>{
+\lstinputlisting[language=Matlab, caption=seudo.m]{lib/seudo.m}
+}
+\only<6>{
+\lstinputlisting[language=Matlab, caption=sol5\_3.m]{src/sol5_3.m}
+}
+\only<7>{
+\lstinputlisting[language=Matlab, caption=ndvi.m]{lib/ndvi.m}
+}
+\only<8>{
+\lstinputlisting[language=Matlab, caption=sol5\_4.m]{src/sol5_4.m}
+}
+\only<9>{
+\lstinputlisting[language=Matlab, caption=densi.m]{lib/densi.m}
+}
+\only<10>{
+\lstinputlisting[language=Matlab, caption=sol5\_5.m]{src/sol5_5.m}
+}
+\end{frame}
+
+\begin{frame}{LAB6: Clasificación}
+\only<1>{
+%\lstinputlisting[language=Matlab, caption=isodata.m]{lib/isodata.m}
+}
+\only<2>{
+%\lstinputlisting[language=Matlab, caption=sol6.m]{src/sol6.m}
+}
+\end{frame}
+
+\end{document}
