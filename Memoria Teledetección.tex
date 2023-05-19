@@ -181,10 +181,30 @@
 
 \begin{frame}{LAB6: Clasificación}
 \only<1>{
-%\lstinputlisting[language=Matlab, caption=isodata.m]{lib/isodata.m}
+\lstinputlisting[
+    language=Matlab,
+    caption={isodata.m (Preparación)},
+    lastline=16
+]{lib/isodata.m}
 }
 \only<2>{
-%\lstinputlisting[language=Matlab, caption=sol6.m]{src/sol6.m}
+\lstinputlisting[
+    language=Matlab,
+    caption={isodata.m (Iteraciones)},
+    firstline=18,
+    lastline=40,
+    basicstyle=\ttfamily\tiny
+]{lib/isodata.m}
+}
+\only<3>{
+\lstinputlisting[
+    language=Matlab,
+    caption={isodata.m (Presentación)},
+    firstline=42
+]{lib/isodata.m}
+}
+\only<4>{
+\lstinputlisting[language=Matlab, caption=sol6.m]{src/sol6.m}
 }
 \end{frame}
 
