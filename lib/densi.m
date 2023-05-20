@@ -1,6 +1,6 @@
 function imgDensity = densi(img)
   img_ = double(img) * 16 / 255;
-  s1 = img_ < 9;
+  s1 = img_ > 0 & img_ < 9;
   s2 = img_ >= 9 & img_ < 10;
   s3 = img_ >= 10 & img_ < 11;
   s4 = img_ >= 11 & img_ < 12;

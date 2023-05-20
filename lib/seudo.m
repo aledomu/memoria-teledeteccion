@@ -3,6 +3,6 @@ function imgColoured = seudo(cutValue, img)
   imgColoured = falso(
     255 * cut,
     zeros(size(img)),
-    255 * ~cut
+    255 * (~cut & img ~= 0)
   );
 end
