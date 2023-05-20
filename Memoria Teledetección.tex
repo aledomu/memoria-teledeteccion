@@ -273,48 +273,106 @@ Bandas:
 
 \begin{frame}{LAB5: Color}
 \only<1>{
+\begin{columns}
+\column{0.5\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/5/imagen_rgb.png}
-\caption{5/imagen\_rgb.png}
+\includegraphics[width=\textwidth]{img/5/imagen_rgb.png}
+\caption{Composición en color verdadero}
 \end{figure}
+\column{0.5\textwidth}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/5/imagen_corte_hsv.png}
+\caption{Corte en la componente V en dominio HSV}
+\end{figure}
+\end{columns}
 }
 \only<2>{
+\begin{columns}
+\column{0.5\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/5/imagen_corte_hsv.png}
-\caption{5/imagen\_corte\_hsv.png}
+\includegraphics[width=\textwidth]{img/r.png}
+\caption{Banda RED original}
 \end{figure}
+\column{0.5\textwidth}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/5/imagen_seudo.png}
+\caption{Seudocolor, Azul: ND $<$ 30, Rojo: ND $\geq$ 30}
+\end{figure}
+\end{columns}
 }
 \only<3>{
+\begin{columns}
+\column{0.5\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/5/imagen_seudo.png}
-\caption{5/imagen\_seudo.png}
+\includegraphics[height=2cm]{img/nir.png}
+\caption{Banda NIR original}
 \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[height=2cm]{img/r.png}
+\caption{Banda RED original}
+\end{figure}
+\column{0.5\textwidth}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/5/imagen_ndvi.png}
+\caption{NDVI}
+\end{figure}
+\end{columns}
 }
 \only<4>{
+\begin{columns}
+\column{0.3\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/5/imagen_ndvi.png}
-\caption{5/imagen\_ndvi.png}
+\includegraphics[width=\textwidth]{img/5/imagen_ndvi.png}
+\caption{NDVI}
 \end{figure}
-}
-\only<5>{
+\column{0.7\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/5/imagen_density.png}
-\caption{5/imagen\_density.png}
+\includegraphics[width=3cm]{chroma_bar.png}
+\includegraphics[height=6cm]{img/5/imagen_density.png}
+\caption{Density Slicing sobre NDVI}
 \end{figure}
+\end{columns}
 }
 \end{frame}
 
 \begin{frame}{LAB6: Clasificación}
+\only<1>{
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/6/imagen_isodata.png}
-\caption{6/imagen\_isodata.png}
+\includegraphics[height=3cm]{img/6/imagen_isodata3.png}
+\caption{ISODATA con 3 categorías tras 2 iteraciones}
 \end{figure}
+Centroides:
+\begin{itemize}
+\item $C1 = [28.195\ \ \ 38.962\ \ \ 19.697\ \ \ 21.787\ \ \ 23.366]$
+\item $C2 = [20.000\ \ \ 22.000\ \ \ 24.594\ \ \ 28.000\ \ \ 38.000]$
+\item $C3 = [23.602\ \ \ 25.550\ \ \ 28.128\ \ \ 32.714\ \ \ 40.787]$
+\end{itemize}
+}
+\only<2>{
+\begin{figure}[h]
+\centering
+\includegraphics[height=3cm]{img/6/imagen_isodata5.png}
+\caption{ISODATA con 5 categorías tras 3 iteraciones}
+\end{figure}
+Centroides:
+\begin{itemize}
+\item $C1 = [14.060\ \ \ 16.898\ \ \ 13.899\ \ \ 15.999\ \ \ 19.377]$
+\item $C2 = [60.021\ \ \ 82.184\ \ \ 41.288\ \ \ 45.080\ \ \ 47.435]$
+\item $C3 = [50.128\ \ \ 83.549\ \ \ 28.800\ \ \ 34.082\ \ \ 35.780]$
+\item $C4 = [24.395\ \ \ 26.436\ \ \ 28.608\ \ \ 32.076\ \ \ 41.270]$
+\item $C5 = [26.749\ \ \ 28.797\ \ \ 31.245\ \ \ 36.505\ \ \ 43.591]$
+\end{itemize}
+}
 \end{frame}
 
 \section{Código}
@@ -486,7 +544,11 @@ Bandas:
 ]{lib/isodata.m}
 }
 \only<4>{
-\lstinputlisting[language=Matlab, caption=sol6.m]{src/sol6.m}
+\lstinputlisting[
+    language=Matlab,
+    caption=sol6.m,
+    basicstyle=\ttfamily\tiny
+]{src/sol6.m}
 }
 \end{frame}
 
