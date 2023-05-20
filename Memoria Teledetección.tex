@@ -238,25 +238,36 @@ Bandas:
 
 \begin{frame}{LAB4: Escalado}
 \only<1>{
+\begin{columns}
+\column{0.5\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/4/imagen_downscaled.png}
-\caption{4/imagen\_downscaled.png}
+\includegraphics[width=\textwidth]{img/4/imagen_downscaled_x2.png}
+\caption{Banda RED original diezmada x2}
 \end{figure}
+\column{0.5\textwidth}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/4/imagen_upscale_bilinear_filter.png}
+\caption{Ampliación por interpolación bilineal x2, PSNR = 30.0621}
+\end{figure}
+\end{columns}
 }
 \only<2>{
+\begin{columns}
+\column{0.5\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/4/imagen_upscale_bilinear_filter.png}
-\caption{4/imagen\_upscale\_bilinear\_filter.png}
+\includegraphics[width=\textwidth]{img/4/imagen_downscaled_x4.png}
+\caption{Banda RED original diezmada x4}
 \end{figure}
-}
-\only<3>{
+\column{0.5\textwidth}
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{img/4/imagen_upscaled_fft.png}
-\caption{4/imagen\_upscaled\_fft.png}
+\includegraphics[width=\textwidth]{img/4/imagen_upscaled_fft.png}
+\caption{Ampliación por FFT x4, PSNR = 28.6339}
 \end{figure}
+\end{columns}
 }
 \end{frame}
 
