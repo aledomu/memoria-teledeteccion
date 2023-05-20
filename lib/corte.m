@@ -3,7 +3,7 @@ function imgCorte = corte(rate, img)
   pLimitL = rate * p;
   pLimitR = p - pLimitL;
 
-  hAccum = cumsum(histc(img(:)', 1:255));
+  hAccum = cumsum(histo(img));
   % Los elementos de cada extremo contendran la ultima barra a cortar de cada lado
   validIdx = find(hAccum >= pLimitL & hAccum <= pLimitR);
   m = validIdx(2);
