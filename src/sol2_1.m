@@ -2,12 +2,14 @@ loadLibs();
 
 img = imread("../img/r.png");
 
-h = histo(img);
+H = histo(img);
 
-bar(h);
-axis([0 size(h, 2) 0 max(h)]);
-xlabel("Banda");
-ylabel("Numero de ocurrencias");
+h = bar(H);
+axis([0 size(H, 2) 0 max(H)]);
+xlabel("ND");
+ylabel("Pixeles");
 title("Histograma");
+
+saveas(h, "../img/2/r_histo.png", "png");
 
 unloadLibs();

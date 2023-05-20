@@ -1,4 +1,4 @@
-function imgCorte = corte(rate, img)
+function [imgCorte, m, M] = corte(rate, img)
   p = prod(size(img));
   pLimitL = rate * p;
   pLimitR = p - pLimitL;
