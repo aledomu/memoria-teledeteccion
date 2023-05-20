@@ -1,5 +1,5 @@
 loadLibs();
 
-mostrarFFT(imread("../img/4/imagen.png"));
+mostrarFFT(imread("../img/r.png"));
 
 unloadLibs();

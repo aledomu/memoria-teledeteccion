@@ -1,6 +1,6 @@
 loadLibs();
 
-img = imread("../img/4/imagen.png");
+img = imread("../img/r.png");
 
 [Y, X] = size(img);
 

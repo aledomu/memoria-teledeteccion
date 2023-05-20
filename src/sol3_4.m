@@ -1,6 +1,6 @@
 loadLibs();
 
-img = imread("../img/3/imagen.png");
+img = imread("../img/r.png");
 
 imgMedianFilterBorder = filtroMedianaBorde(img);
 

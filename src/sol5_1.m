@@ -1,11 +1,11 @@
 loadLibs();
 
-r = imread("../img/5/imagen1_r.png");
-g = imread("../img/5/imagen1_g.png");
-b = imread("../img/5/imagen1_b.png");
+r = imread("../img/r.png");
+g = imread("../img/g.png");
+b = imread("../img/b.png");
 
 imgRGB = falso(r, g, b);
 
-imwrite(imgRGB, "../img/5/imagen1_rgb.png");
+imwrite(imgRGB, "../img/5/imagen_rgb.png");
 
 unloadLibs();

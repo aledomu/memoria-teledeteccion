@@ -1,6 +1,6 @@
 loadLibs();
 
-img = imread("../img/2/imagen.png");
+img = imread("../img/r.png");
 
 imgCorte = corte(0.01, img);
 

@@ -1,11 +1,11 @@
 loadLibs();
 
-img1 = imread("../img/6/imagen1.png");
-img2 = imread("../img/6/imagen2.png");
-img3 = imread("../img/6/imagen3.png");
-img4 = imread("../img/6/imagen4.png");
-img5 = imread("../img/6/imagen5.png");
-img = cat(3, img1, img2, img3, img4, img5);
+swir = imread("../img/swir.png");
+nir = imread("../img/nir.png");
+r = imread("../img/r.png");
+g = imread("../img/g.png");
+b = imread("../img/b.png");
+img = cat(3, swir, nir, r, g, b);
 
 imgIsodata = isodata(img, 5);
 

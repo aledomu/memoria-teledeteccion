@@ -1,7 +1,7 @@
-n = imread("../img/1/band8nir.png");
-r = imread("../img/1/band4red.png");
-g = imread("../img/1/band3green.png");
-b = imread("../img/1/band2blue.png");
+n = imread("../img/nir.png");
+r = imread("../img/r.png");
+g = imread("../img/g.png");
+b = imread("../img/b.png");
 
 imgV(:, :, 1) = r;
 imgV(:, :, 2) = g;
